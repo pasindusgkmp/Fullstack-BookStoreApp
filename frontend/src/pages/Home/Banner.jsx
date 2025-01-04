@@ -10,7 +10,7 @@ function Banner() {
     </div>
 
     <div className='md:w-1/2 w-full'>
-        <h1 class className="md:text-5xl text-2xl font-medium mb7">New Releases This Week </h1>
+        <h1 className="md:text-5xl text-2xl font-medium mb7">New Releases This Week </h1>
         <p className='mb-10'> It's time to update your reading list with some of the latest
             and greatest releases in the literary world.From heart-pumping thrillers to 
             captivating memories,this week's new releases offer somthing for everyone
