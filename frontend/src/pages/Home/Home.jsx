@@ -3,6 +3,7 @@ import Banner from './Banner'
 import TopSellers from './TopSellers'
 import Recommended from './Recommended'
 import News from './News'
+import Footer from '../../components/Footer'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <TopSellers/>
         <Recommended/>
         <News/>
+        
     </>
   )
 }
