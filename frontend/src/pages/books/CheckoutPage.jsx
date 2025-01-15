@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux'
 import { useForm } from "react-hook-form"
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 
 
 function CheckoutPage() {
     const cartItems = useSelector(state => state.cart.cartItems);
     const totalPrice = cartItems.reduce((acc, item)=> acc + item.newPrice,0).toFixed(2);
+    const {currentUser} = useAuth();
     //const currentUser =true;
-    const currentUser = { email: "user@example.com" }; 
+    //const currentUser = { email: "user@example.com" }; 
 
 
 
