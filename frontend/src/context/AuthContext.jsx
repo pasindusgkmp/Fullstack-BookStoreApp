@@ -60,6 +60,7 @@ export const AuthProvide = ({children}) =>{
 
     const value = {
         currentUser,
+        loading,
         registerUser,
         loginUser,
         signInWithGoogle,

@@ -6,9 +6,10 @@ const { getAllBooks } = require("./book.controller");
 const { getSingleBook } = require("./book.controller");
 const { updateBook } = require("./book.controller");
 const { deleteBook } = require("./book.controller");
+const verifyAdminToken = require("../middleware/verifyAdminToken");
 
 // post a book
-router.post("/create-book", postABOOK)
+router.post("/create-book",verifyAdminToken, postABOOK)
 
 
 // get all book
@@ -19,10 +20,10 @@ router.get("/", getAllBooks)
 router.get("/:id" , getSingleBook);
 
 //update a book endpoint
-router.put("/edit/:id", updateBook);
+router.put("/edit/:id",verifyAdminToken, updateBook);
 
 //delete a book endpoint
-router.delete("/delete/:id",deleteBook);
+router.delete("/delete/:id",verifyAdminToken,deleteBook);
 
 
 
