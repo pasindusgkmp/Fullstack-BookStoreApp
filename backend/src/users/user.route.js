@@ -35,7 +35,7 @@ router.post("/admin", async (req, res) => {
 
    } catch(error){
     console.error("failed to loging as admin",error)
-       res.status(401).send({message:"failed to loging as admin"})
+      res.status(401).send({message:"failed to loging as admin"})
    }
 })
 
